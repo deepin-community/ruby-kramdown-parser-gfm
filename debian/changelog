@@ -1,0 +1,21 @@
+ruby-kramdown-parser-gfm (1.1.0-2) unstable; urgency=medium
+
+  * Reupload to unstable to comply with testing migration policy
+  * Add .gitattributes to keep unwanted files out of the source package
+
+ -- Cédric Boutillier <boutil@debian.org>  Sat, 05 Sep 2020 23:07:40 +0200
+
+ruby-kramdown-parser-gfm (1.1.0-1) unstable; urgency=medium
+
+  * Upload to unstable
+  * Suggest and build-depend on ruby-rouge, needed for two tests (Closes:
+    #968280)
+  * Remove trailing spaces in changelog
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 24 Aug 2020 00:37:18 +0200
+
+ruby-kramdown-parser-gfm (1.1.0-1~exp1) experimental; urgency=medium
+
+  * Initial release
+
+ -- Cédric Boutillier <boutil@debian.org>  Mon, 20 Jul 2020 12:30:14 +0200

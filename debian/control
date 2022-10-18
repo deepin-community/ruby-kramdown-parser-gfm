@@ -1,0 +1,36 @@
+Source: ruby-kramdown-parser-gfm
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Boutillier <boutil@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1),
+               rake,
+               ruby-kramdown (>= 2.0),
+	       ruby-rouge
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-kramdown-parser-gfm.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-kramdown-parser-gfm
+Homepage: https://github.com/kramdown/parser-gfm
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-kramdown-parser-gfm
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends},
+         ruby-kramdown (>= 2~)
+Suggests: ruby-rouge
+Enhances: ruby-kramdown (>= 2~)
+Breaks: ruby-kramdown (<< 2~)
+Replaces: ruby-kramdown (<< 2~)
+Description: kramdown parser for the GFM dialect of Markdown
+ The kramdown is a fast, pure Ruby, Markdown parser and converter, using
+ a strict syntax definition and supporting several common
+ extensions.
+ .
+ This library provides a parser for the GFM dialect of Markdown, which used to
+ be bundled with kramdown in its version 1.
